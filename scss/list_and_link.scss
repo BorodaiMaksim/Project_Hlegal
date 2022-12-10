@@ -1,0 +1,24 @@
+﻿@import "colors";
+
+ul li::before {
+    content: '';
+    all: unset;
+    width: 6px;
+    height: 6px;
+    background: map-get($accent, default);
+    border-radius: 50%;
+    margin-left: -1em
+}
+
+ol li::after {
+    content: '';
+    background: map-get($accent, default);
+}
+
+a:link {
+    color: map-get($active, regular);
+}
+
+a:hover {
+    color: map-get($accent, default);
+}

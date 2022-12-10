@@ -1,0 +1,24 @@
+﻿@import "colors";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Montserrat/Montserrat-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('woff2-variations');
+    font-weight: 100 900;
+    font-stretch: 75% 125%;
+    font-style: italic;
+}
+
+h1, .h1 {
+    background: map-get($gradient, red-text);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
