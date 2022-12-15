@@ -69,4 +69,119 @@
         }
     }
 }
+.header-bottom {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border-bottom: 1px solid red;
+
+    .wrapper {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 45px;
+
+        .logo {
+            margin: 0px 0px 0px 15px;
+            padding: 0;
+        }
+
+        .burger-menu {
+            padding: 0px;
+            margin: 0px 15px 0px 0px;
+
+            input {
+                display: none;
+
+                &:checked ~ .header-submenu {
+                    display: block;
+                }
+            }
+
+            label {
+                margin: 0px;
+
+                .hamburger {
+                    @include hamburger;
+
+                    &:hover {
+                        box-shadow: 0px 0px 0px 8px map-get($grey, separator);
+                        border-radius: 4px;
+                        background-color: map-get($grey, separator);
+                    }
+                }
+            }
+
+            .header-submenu {
+                width: 100%;
+                height: 100vh;
+                display: none;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                background-color: map-get($main, default);
+
+
+
+                ul {
+                    margin-left: 0rem;
+                    margin-bottom: 0rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    background-color: #fff;
+                    border-radius: 12px 12px 0 0;
+                    padding: 64px 12px 12px;
+                    position: absolute;
+                    left: 8px;
+                    right: 8px;
+                    bottom: 0px;
+
+                    li {
+                        list-style: none;
+                        display: inline;
+                        padding: 0px;
+                        margin: 0px;
+                    }
+
+                    li {
+                        a {
+                            margin: 0px;
+                            padding: 0px;
+                            display: block;
+                            background-color: map-get($grey, background);
+                            color: map-get($active, default);
+                            padding: 7px 12px;
+                            font-size: 24px;
+                            font-weight: 700;
+                            border-radius: 12px;
+                            text-align: center;
+
+                            &:hover {
+                                background-color: map-get($grey, separator);
+                                color: map-get($active, default);
+                            }
+
+                            &:active {
+                                color: map-get($accent, default);
+                            }
+                        }
+                    }
+                }
+
+                .header-close-button {
+                    width: 10px;
+                    height: 10px;
+                    background-color: red;
+                    position:absolute;
+                    right: 25px;
+                    top:auto;
+                }
+            }
+        }
+    }
+}
+
 
