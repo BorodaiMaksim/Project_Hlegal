@@ -1,11 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\node_modules",
-    "\\node_modules\\foundation-sites",
-    "\\node_modules\\foundation-sites\\scss",
-    "\\node_modules\\foundation-sites\\scss\\util"
+    "\\scss"
   ],
-  "SelectedNode": "\\node_modules\\foundation-sites\\scss\\util\\_mixins.scss",
+  "SelectedNode": "\\scss\\list_and_link.scss",
   "PreviewInSolutionExplorer": false
 }
