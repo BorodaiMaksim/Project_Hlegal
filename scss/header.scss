@@ -111,11 +111,8 @@
 
 
                 .hamburger {
-                    @include hamburger;
-
-                    @include breakpoint(large) {
-                        display: none;
-                    }
+                   @include hamburger;
+                    
 
                     &:hover {
                         box-shadow: 0px 0px 0px 8px map-get($grey, separator);
@@ -123,7 +120,7 @@
                         background-color: map-get($grey, separator);
                     }
                 }
-            }
+        }
 
             .header-submenu {
                 width: 100%;
