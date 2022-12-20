@@ -1,15 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images\\hlegal",
-    "\\images\\hlegal\\ulkit",
-    "\\images\\hlegal\\ulkit\\Header",
     "\\node_modules",
-    "\\node_modules\\foundation-sites",
-    "\\node_modules\\foundation-sites\\scss",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\node_modules\\foundation-sites",
   "PreviewInSolutionExplorer": false
 }

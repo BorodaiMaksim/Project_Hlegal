@@ -8,10 +8,17 @@
 @import "../node_modules/foundation-sites/scss/foundation";
 
 
+
+
 .header-top {
     background-color: map-get($grey, background);
     height: 50px;
-    
+
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        height: 220px;
+        background-color: #fff;
+    }
+
 
 
     .wrapper {
@@ -20,16 +27,27 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            height: 60px;
+            display: flex;
+            flex-direction: row;
+            justify-content: inherit;
+            align-items: end;
+        }
+
 
         .language-bottom {
-            
             display: flex;
             align-items: center;
 
             ul {
                 margin: 0px 0px 0px 15px;
                 padding: 0;
+
+                @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                    margin: 0px 0px 0px 53px;
+                }
             }
 
             ul li {
@@ -56,8 +74,35 @@
             }
         }
 
+        .text-information {
+
+            .link {
+                padding: 0px 0px 0px 0px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                color: map-get($grey, text);
+            }
+        }
+
+        .text-information::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: map-get($grey, separator);
+            margin: 1px 8px 1.5px 6px;
+        }
+
         .contact-information {
             margin-right: 15px;
+
+            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                margin: 0px;
+            }
+
 
             a {
                 font-style: normal;
@@ -66,14 +111,61 @@
                 line-height: 20px;
                 color: map-get($grey, text);
                 padding: 15px 0px;
+
+                @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: map-get($grey, text);
+                    padding: 10px 0px 0px 0px;
+                }
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .contact-information::before {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: map-get($grey, separator);
+                margin: 1px 6px 1.5px 8px;
+            }
+        }
+
+        .fb-logo {
+            img {
+            width: 20px;
+            height: 20px;
+            }
+        }
+
+        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            .fb-logo::before {
+                content: '';
+                display: inline-block;
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: map-get($grey, separator);
+                margin: 1px 6px 1.5px 8px;
             }
         }
     }
 }
+
 .header-bottom {
     height: 57px;
     background-color: #fff;
-    border-bottom: 1px solid red;
+
+    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        position: absolute;
+        top: 65px;
+        height: 155px;
+        width: 100%;
+    }
 
     .wrapper {
         height: 57px;
@@ -88,10 +180,76 @@
             padding: 0;
             height: 100%;
 
+
+            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                margin: 0px 0px 0px 60px;
+            }
+
             .logo-image {
                 padding: 20px 0px;
+
+                img {
+                    width: 178px;
+
+                    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                        width: 248px;
+                    }
+                }
             }
         }
+
+        $menu-underline-from-center-border-thickness: 0.125rem;
+
+        .navigation-menu {
+            position: absolute;
+            top: 85px;
+            margin-left: 60px;
+
+            ul {
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                gap: 15px;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: map-get($active, default);
+                    }
+
+                    .underline-from-center {
+                        position: relative;
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            top: calc(100% - #{$menu-underline-from-center-border-thickness});
+                            border-bottom: 1px solid red;
+                            left: 50%;
+                            right: 50%;
+                            transition: all 0.5s ease;
+                        }
+
+                        &:hover::after {
+                            left: 0;
+                            right: 0;
+                            transition: all 0.5s ease;
+                        }
+                    }
+                }
+            }
+        }
+
+
 
         .burger-menu {
             padding: 0px;
@@ -111,8 +269,8 @@
 
 
                 .hamburger {
-                   @include hamburger;
-                    
+                    @include hamburger;
+
 
                     &:hover {
                         box-shadow: 0px 0px 0px 8px map-get($grey, separator);
@@ -120,7 +278,7 @@
                         background-color: map-get($grey, separator);
                     }
                 }
-        }
+            }
 
             .header-submenu {
                 width: 100%;
@@ -170,7 +328,7 @@
 
                             &:hover {
                                 background-color: map-get($grey, separator);
-                                color: map-get($active, default);
+                                color: map-get($accent, default);
                             }
 
                             &:active {
