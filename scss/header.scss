@@ -8,6 +8,199 @@
 @import "../node_modules/foundation-sites/scss/foundation";
 
 
+.header-for-large {
+    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+        height: 146px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo {
+            margin: 0px 0px 0px 60px;
+
+            .logo-image {
+                padding: 20px 0px;
+
+                img {
+                    width: 318px;
+                }
+            }
+        }
+
+        .header-information {
+            margin: 0px 60px 0px 0px;
+
+            .content-placement {
+                display: flex;
+                flex-direction: column;
+
+
+                .wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    height: 25px;
+                    align-content: center;
+
+                    .language-bottom {
+                        display: flex;
+                        align-items: center;
+
+                        ul {
+                            margin: 0px;
+                            padding: 0px;
+                        }
+
+                        ul li {
+                            list-style: none;
+                            display: inline;
+                            padding: 0px;
+                            margin: 0px;
+
+
+                            a {
+                                color: map-get($grey, text);
+                                padding: 5px 7px;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 15px;
+                                border-radius: 8px;
+                            }
+
+                            a:hover {
+                                background-color: map-get($accent, default);
+                                color: #fff;
+                            }
+                        }
+                    }
+
+                    .text-information {
+                        
+
+                        .link {
+                            padding: 0px 0px 0px 0px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: map-get($grey, text);
+                        }
+                    }
+
+                    .text-information::before {
+                        content: '';
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: map-get($grey, separator);
+                        margin: 1px 8px 1.5px 6px;
+                    }
+
+                    .contact-information {
+                        margin: 0px;
+                        height: 25px;
+                        a {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: map-get($grey, text);
+                        }
+                    }
+
+                    .contact-information::before {
+                        content: '';
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: map-get($grey, separator);
+                        margin: 1px 6px 1.5px 8px;
+                    }
+
+                    .fb-logo {
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+
+                    .fb-logo::before {
+                        content: '';
+                        display: inline-block;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        background-color: map-get($grey, separator);
+                        margin: 1px 6px 1.5px 8px;
+                    }
+                }
+
+                .navigation-menu {
+                    margin: 10px 0px 0px 80px;
+
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        gap: 15px;
+
+                        li {
+                            list-style: none;
+
+                            a {
+                                font-family: Montserrat;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($active, default);
+                                position: relative;
+                            }
+
+                            a::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                transform: scaleX(0);
+                                height: 2px;
+                                bottom: 0;
+                                left: 0;
+                                background-color: map-get($active, default);
+                                order: 1;
+                                align-self: stretch;
+                                flex-grow: 0;
+                                transform-origin: bottom right;
+                                transition: transform 0.25s ease-out;
+                            }
+
+                            a:hover::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                            }
+
+                            a:active::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                                background-color: map-get($accent, default);
+                            }
+
+                            a:active {
+                                color: map-get($accent, default);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 .header-top {
@@ -18,8 +211,6 @@
         height: 220px;
         background-color: #fff;
     }
-
-
 
     .wrapper {
         height: 50px;
@@ -137,8 +328,8 @@
 
         .fb-logo {
             img {
-            width: 20px;
-            height: 20px;
+                width: 20px;
+                height: 20px;
             }
         }
 
@@ -185,6 +376,7 @@
                 margin: 0px 0px 0px 60px;
             }
 
+
             .logo-image {
                 padding: 20px 0px;
 
@@ -194,11 +386,11 @@
                     @media only screen and (min-width: 640px) and (max-width: 1024px) {
                         width: 248px;
                     }
+
                 }
             }
         }
 
-        $menu-underline-from-center-border-thickness: 0.125rem;
 
         .navigation-menu {
             position: absolute;
@@ -224,26 +416,38 @@
                         font-size: 16px;
                         line-height: 20px;
                         color: map-get($active, default);
+                        position: relative;
                     }
 
-                    .underline-from-center {
-                        position: relative;
+                    a::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        transform: scaleX(0);
+                        height: 2px;
+                        bottom: 0;
+                        left: 0;
+                        background-color: map-get($active, default);
+                        order: 1;
+                        align-self: stretch;
+                        flex-grow: 0;
+                        transform-origin: bottom right;
+                        transition: transform 0.25s ease-out;
+                    }
 
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            top: calc(100% - #{$menu-underline-from-center-border-thickness});
-                            border-bottom: 1px solid red;
-                            left: 50%;
-                            right: 50%;
-                            transition: all 0.5s ease;
-                        }
+                    a:hover::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                    }
 
-                        &:hover::after {
-                            left: 0;
-                            right: 0;
-                            transition: all 0.5s ease;
-                        }
+                    a:active::after {
+                        transform: scaleX(1);
+                        transform-origin: bottom left;
+                        background-color: map-get($accent, default);
+                    }
+
+                    a:active {
+                        color: map-get($accent, default);
                     }
                 }
             }
@@ -341,5 +545,6 @@
         }
     }
 }
+
 
 

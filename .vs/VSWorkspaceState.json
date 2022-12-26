@@ -1,9 +1,12 @@
 {
   "ExpandedNodes": [
     "",
-    "\\node_modules",
+    "\\images",
+    "\\images\\dot-separator",
+    "\\images\\fb-logo",
     "\\scss",
     "\\styles"
   ],
+  "SelectedNode": "\\package.json",
   "PreviewInSolutionExplorer": false
 }
