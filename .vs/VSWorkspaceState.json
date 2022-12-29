@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\images",
-    "\\images\\dot-separator",
-    "\\images\\fb-logo",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\package.json",
+  "SelectedNode": "\\scss\\typography.scss",
   "PreviewInSolutionExplorer": false
 }
