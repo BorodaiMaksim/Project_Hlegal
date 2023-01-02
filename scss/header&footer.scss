@@ -11,7 +11,7 @@
 
 
 .header-for-large {
-    @media only screen and (min-width: 1025px) and (max-width: 1920px) {
+    @media only screen and (min-width: 1280px) and (max-width: 1920px) {
         height: 146px;
         background-color: #fff;
         display: flex;
@@ -208,7 +208,7 @@
     background-color: map-get($grey, background);
     height: 50px;
 
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
         height: 220px;
         background-color: #fff;
     }
@@ -220,7 +220,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1279px) {
             height: 60px;
             display: flex;
             flex-direction: row;
@@ -237,7 +237,7 @@
                 margin: 0px 0px 0px 15px;
                 padding: 0;
 
-                @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
                     margin: 0px 0px 0px 53px;
                 }
             }
@@ -291,7 +291,7 @@
         .contact-information {
             margin-right: 15px;
 
-            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
                 margin: 0px;
             }
 
@@ -304,7 +304,7 @@
                 color: map-get($grey, text);
                 padding: 15px 0px;
 
-                @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
                     font-style: normal;
                     font-weight: 700;
                     font-size: 13px;
@@ -315,7 +315,7 @@
             }
         }
 
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1279px) {
             .contact-information::before {
                 content: '';
                 display: inline-block;
@@ -334,7 +334,7 @@
             }
         }
 
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1279px) {
             .fb-logo::before {
                 content: '';
                 display: inline-block;
@@ -352,7 +352,7 @@
     height: 57px;
     background-color: #fff;
 
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
         position: absolute;
         top: 65px;
         height: 155px;
@@ -373,7 +373,7 @@
             height: 100%;
 
 
-            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
                 margin: 0px 0px 0px 60px;
             }
 
@@ -384,7 +384,7 @@
                 img {
                     width: 178px;
 
-                    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+                    @media only screen and (min-width: 768px) and (max-width: 1279px) {
                         width: 248px;
                     }
 
@@ -560,7 +560,7 @@
     background-color: map-get($grey, background);
     position: relative;
 
-    @media only screen and (min-width: 640px) and (max-width: 1024px) {
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
         height: 191px;
     }
 
@@ -575,7 +575,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        @media only screen and (min-width: 640px) and (max-width: 1024px) {
+        @media only screen and (min-width: 768px) and (max-width: 1279px) {
             position: absolute;
             left: 50%;
             right: auto;
@@ -619,7 +619,7 @@
             line-height: 20px;
             color: map-get($grey, text);
 
-            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
                 order: 1;
                 margin: 0 auto;
             }
@@ -631,7 +631,7 @@
             align-items: end;
             margin-top: 30px;
 
-            @media only screen and (min-width: 640px) and (max-width: 1024px) {
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
                 flex: none;
                 margin-top: 21px;
                 margin-bottom: 30px;

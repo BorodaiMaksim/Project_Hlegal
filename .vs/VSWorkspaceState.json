@@ -2,9 +2,12 @@
   "ExpandedNodes": [
     "",
     "\\images",
+    "\\images\\fb-logo-blue",
+    "\\images\\fb-logo-blue-jpg",
+    "\\images\\fb-logo-red",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\scss\\typography.scss",
+  "SelectedNode": "\\header-footer.html",
   "PreviewInSolutionExplorer": false
 }
