@@ -1,0 +1,230 @@
+﻿@import "./colors";
+@import "../node_modules/foundation-sites/scss/foundation";
+@import "./typography";
+@import "./header&footer";
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    height: 1335px;
+    width: 100%;
+
+    .main-content {
+        position: absolute;
+        top: 206px;
+        left: 180px;
+        height: 380px;
+        width: 662px;
+
+        .content-header {
+            position: absolute;
+            width: 100%;
+
+            h1 {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+            }
+        }
+
+        .main-text {
+            position: absolute;
+            width: 100%;
+            top: 120px;
+
+            p {
+                all: unset;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 19px;
+                line-height: 30px;
+                color: #000000;
+            }
+        }
+    }
+
+    .vertical-line-separator {
+        position: absolute;
+        top: 206px;
+        left: 872px;
+    }
+
+    .advantages {
+        position: absolute;
+        top: 206px;
+        right: 180px;
+        height: 380px;
+        width: 354px;
+
+        .flag-section {
+            position: absolute;
+            width: 97px;
+            height: 44px;
+
+            img {
+                position: absolute;
+                top: 8px;
+            }
+
+            h1 {
+                position: absolute;
+                left: 35px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+
+        .flag-description {
+            p {
+                all: unset;
+                position: absolute;
+                top: 54px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: map-get($main, default);
+            }
+        }
+
+        .bag-section {
+            position: absolute;
+            top: 114px;
+            width: 97px;
+            height: 44px;
+
+            img {
+                position: absolute;
+                top: 4px;
+            }
+
+            h1 {
+                position: absolute;
+                left: 35px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+
+        .bag-description {
+            p {
+                all: unset;
+                position: absolute;
+                top: 168px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: map-get($main, default);
+                width: 80%;
+            }
+        }
+
+        .star-section {
+            position: absolute;
+            top: 248px;
+            width: 97px;
+            height: 44px;
+
+            img {
+                position: absolute;
+                top: 8px;
+            }
+
+            h1 {
+                position: absolute;
+                left: 35px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
+
+        .star-description {
+            p {
+                all: unset;
+                position: absolute;
+                top: 302px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: map-get($main, default);
+            }
+        }
+    }
+
+    .promo-image {
+        position: absolute;
+        top: 646px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        height: 438px;
+        background-image: url("../images/promo-image/promo-image.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .secondary-part {
+        p {
+            all: unset;
+            position: absolute;
+            top: 1144px;
+            left: 180px;
+            width: 658px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 19px;
+            line-height: 30px;
+            color: #000000;
+        }
+    }
+
+    .secondary-header {
+        h1 {
+            width: 362px;
+            position: absolute;
+            top: 1144px;
+            left: 898px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+.top-footer {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-color: map-get($grey, background);
+
+    .label {
+        position: absolute;
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: map-get($main, default);
+        background-color: map-get($grey, background);
+    }
+}
+
+
