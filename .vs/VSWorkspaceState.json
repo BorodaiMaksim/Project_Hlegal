@@ -1,13 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images",
-    "\\images\\fb-logo-blue",
     "\\images\\fb-logo-blue-jpg",
     "\\images\\fb-logo-red",
+    "\\images\\horizontal-line-separator",
+    "\\node_modules",
+    "\\node_modules\\foundation-sites",
+    "\\node_modules\\foundation-sites\\scss",
+    "\\node_modules\\foundation-sites\\scss\\components",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\header-footer.html",
+  "SelectedNode": "\\node_modules\\foundation-sites\\scss\\components\\_orbit.scss",
   "PreviewInSolutionExplorer": false
 }
