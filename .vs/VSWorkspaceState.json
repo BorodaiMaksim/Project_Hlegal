@@ -1,16 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\images",
+    "\\images\\bottom-carousel",
     "\\images\\fb-logo-blue-jpg",
     "\\images\\fb-logo-red",
+    "\\images\\footer-company-image-three",
     "\\images\\horizontal-line-separator",
-    "\\node_modules",
-    "\\node_modules\\foundation-sites",
-    "\\node_modules\\foundation-sites\\scss",
-    "\\node_modules\\foundation-sites\\scss\\components",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\node_modules\\foundation-sites\\scss\\components\\_orbit.scss",
+  "SelectedNode": "\\scss\\header&footer.scss",
   "PreviewInSolutionExplorer": false
 }

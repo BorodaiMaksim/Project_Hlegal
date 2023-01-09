@@ -106,7 +106,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -118,15 +118,31 @@ h1, .h1 {
   .header-for-large .logo {
     margin: 0px 0px 0px 60px;
   }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+  .header-for-large .logo {
+    margin: 0px 0px 0px 160px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
   .header-for-large .logo .logo-image img {
     width: 318px;
   }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+  .header-for-large .header-information {
+    margin: 0px 160px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -270,7 +286,7 @@ h1, .h1 {
   background-color: #F5F5FA;
   height: 50px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top {
     height: 220px;
     background-color: #fff;
@@ -283,7 +299,7 @@ h1, .h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper {
     height: 60px;
     display: flex;
@@ -300,7 +316,7 @@ h1, .h1 {
   margin: 0px 0px 0px 15px;
   padding: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .language-bottom ul {
     margin: 0px 0px 0px 53px;
   }
@@ -344,7 +360,7 @@ h1, .h1 {
 .header-top .wrapper .contact-information {
   margin-right: 15px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .contact-information {
     margin: 0px;
   }
@@ -357,7 +373,7 @@ h1, .h1 {
   color: #B3B3BA;
   padding: 15px 0px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .contact-information a {
     font-style: normal;
     font-weight: 700;
@@ -367,7 +383,7 @@ h1, .h1 {
     padding: 10px 0px 0px 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .contact-information::before {
     content: "";
     display: inline-block;
@@ -382,7 +398,7 @@ h1, .h1 {
   width: 20px;
   height: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .fb-logo::before {
     content: "";
     display: inline-block;
@@ -398,7 +414,7 @@ h1, .h1 {
   height: 57px;
   background-color: #fff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-bottom {
     position: absolute;
     top: 65px;
@@ -418,7 +434,7 @@ h1, .h1 {
   padding: 0;
   height: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-bottom .wrapper .logo {
     margin: 0px 0px 0px 60px;
   }
@@ -429,7 +445,7 @@ h1, .h1 {
 .header-bottom .wrapper .logo .logo-image img {
   width: 178px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-bottom .wrapper .logo .logo-image img {
     width: 248px;
   }
@@ -600,7 +616,7 @@ h1, .h1 {
   z-index: 3;
   width: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer {
     height: 191px;
   }
@@ -616,7 +632,13 @@ h1, .h1 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  .footer .placement {
+    left: 160px;
+    right: 160px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .placement {
     position: absolute;
     left: 50%;
@@ -657,7 +679,7 @@ h1, .h1 {
   line-height: 20px;
   color: #B3B3BA;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .placement .note {
     order: 1;
     margin: 0 auto;
@@ -668,7 +690,7 @@ h1, .h1 {
   align-items: end;
   margin-top: 30px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .placement .main-information {
     flex: none;
     margin-top: 21px;
@@ -872,7 +894,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 1920px) {
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -884,15 +906,31 @@ h1, .h1 {
   .header-for-large .logo {
     margin: 0px 0px 0px 60px;
   }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+  .header-for-large .logo {
+    margin: 0px 0px 0px 160px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
   .header-for-large .logo .logo-image img {
     width: 318px;
   }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+  .header-for-large .header-information {
+    margin: 0px 160px 0px 0px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 3000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -1036,7 +1074,7 @@ h1, .h1 {
   background-color: #F5F5FA;
   height: 50px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top {
     height: 220px;
     background-color: #fff;
@@ -1049,7 +1087,7 @@ h1, .h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper {
     height: 60px;
     display: flex;
@@ -1066,7 +1104,7 @@ h1, .h1 {
   margin: 0px 0px 0px 15px;
   padding: 0;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .language-bottom ul {
     margin: 0px 0px 0px 53px;
   }
@@ -1110,7 +1148,7 @@ h1, .h1 {
 .header-top .wrapper .contact-information {
   margin-right: 15px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .contact-information {
     margin: 0px;
   }
@@ -1123,7 +1161,7 @@ h1, .h1 {
   color: #B3B3BA;
   padding: 15px 0px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .contact-information a {
     font-style: normal;
     font-weight: 700;
@@ -1133,7 +1171,7 @@ h1, .h1 {
     padding: 10px 0px 0px 0px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .contact-information::before {
     content: "";
     display: inline-block;
@@ -1148,7 +1186,7 @@ h1, .h1 {
   width: 20px;
   height: 20px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-top .wrapper .fb-logo::before {
     content: "";
     display: inline-block;
@@ -1164,7 +1202,7 @@ h1, .h1 {
   height: 57px;
   background-color: #fff;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-bottom {
     position: absolute;
     top: 65px;
@@ -1184,7 +1222,7 @@ h1, .h1 {
   padding: 0;
   height: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-bottom .wrapper .logo {
     margin: 0px 0px 0px 60px;
   }
@@ -1195,7 +1233,7 @@ h1, .h1 {
 .header-bottom .wrapper .logo .logo-image img {
   width: 178px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .header-bottom .wrapper .logo .logo-image img {
     width: 248px;
   }
@@ -1366,7 +1404,7 @@ h1, .h1 {
   z-index: 3;
   width: 100%;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer {
     height: 191px;
   }
@@ -1382,7 +1420,13 @@ h1, .h1 {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  .footer .placement {
+    left: 160px;
+    right: 160px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .placement {
     position: absolute;
     left: 50%;
@@ -1423,7 +1467,7 @@ h1, .h1 {
   line-height: 20px;
   color: #B3B3BA;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .placement .note {
     order: 1;
     margin: 0 auto;
@@ -1434,7 +1478,7 @@ h1, .h1 {
   align-items: end;
   margin-top: 30px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1279px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   .footer .placement .main-information {
     flex: none;
     margin-top: 21px;
@@ -1572,58 +1616,98 @@ main {
   height: 1335px;
   width: 100%;
 }
-main .main-content {
-  position: absolute;
-  top: 206px;
-  left: 180px;
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main {
+    height: 1485px;
+  }
+}
+main .wrapper-main-part {
+  margin-top: 60px;
+  margin-left: 180px;
+  margin-right: 180px;
   height: 380px;
-  width: 662px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
 }
-main .main-content .content-header {
-  position: absolute;
-  width: 100%;
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  main .wrapper-main-part {
+    margin-left: 280px;
+    margin-right: 280px;
+  }
 }
-main .main-content .content-header h1 {
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .wrapper-main-part {
+    height: 470px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+main .wrapper-main-part .main-content {
+  height: 380px;
+  width: 580px;
+}
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  main .wrapper-main-part .main-content {
+    width: 830px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .wrapper-main-part .main-content {
+    width: 400px;
+    height: 470px;
+  }
+}
+main .wrapper-main-part .main-content .content-header h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
 }
-main .main-content .main-text {
-  position: absolute;
-  width: 100%;
-  top: 120px;
+main .wrapper-main-part .main-content .main-text {
+  margin-top: 26px;
 }
-main .main-content .main-text p {
+main .wrapper-main-part .main-content .main-text p {
   all: unset;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   color: #000000;
+  width: 580px;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
 }
-main .vertical-line-separator {
-  position: absolute;
-  top: 206px;
-  left: 872px;
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  main .wrapper-main-part .main-content .main-text p {
+    width: 830px;
+  }
 }
-main .advantages {
-  position: absolute;
-  top: 206px;
-  right: 180px;
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .wrapper-main-part .main-content .main-text p {
+    width: 400px;
+  }
+}
+main .wrapper-main-part .advantages {
   height: 380px;
   width: 354px;
 }
-main .advantages .flag-section {
-  position: absolute;
-  width: 97px;
-  height: 44px;
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .wrapper-main-part .advantages {
+    height: 470px;
+  }
 }
-main .advantages .flag-section img {
+main .wrapper-main-part .advantages .flag-section {
+  width: 120px;
+  height: 44px;
+  position: relative;
+}
+main .wrapper-main-part .advantages .flag-section img {
   position: absolute;
   top: 8px;
 }
-main .advantages .flag-section h1 {
+main .wrapper-main-part .advantages .flag-section h1 {
   position: absolute;
   left: 35px;
   font-style: normal;
@@ -1631,27 +1715,25 @@ main .advantages .flag-section h1 {
   font-size: 36px;
   line-height: 44px;
 }
-main .advantages .flag-description p {
+main .wrapper-main-part .advantages .flag-description p {
   all: unset;
-  position: absolute;
-  top: 54px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #323264;
 }
-main .advantages .bag-section {
-  position: absolute;
-  top: 114px;
+main .wrapper-main-part .advantages .bag-section {
+  position: relative;
+  top: 40px;
   width: 97px;
   height: 44px;
 }
-main .advantages .bag-section img {
+main .wrapper-main-part .advantages .bag-section img {
   position: absolute;
   top: 4px;
 }
-main .advantages .bag-section h1 {
+main .wrapper-main-part .advantages .bag-section h1 {
   position: absolute;
   left: 35px;
   font-style: normal;
@@ -1659,10 +1741,11 @@ main .advantages .bag-section h1 {
   font-size: 36px;
   line-height: 44px;
 }
-main .advantages .bag-description p {
+main .wrapper-main-part .advantages .bag-description {
+  margin-top: 44px;
+}
+main .wrapper-main-part .advantages .bag-description p {
   all: unset;
-  position: absolute;
-  top: 168px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1670,17 +1753,17 @@ main .advantages .bag-description p {
   color: #323264;
   width: 80%;
 }
-main .advantages .star-section {
-  position: absolute;
-  top: 248px;
+main .wrapper-main-part .advantages .star-section {
+  position: relative;
+  top: 40px;
   width: 97px;
   height: 44px;
 }
-main .advantages .star-section img {
+main .wrapper-main-part .advantages .star-section img {
   position: absolute;
   top: 8px;
 }
-main .advantages .star-section h1 {
+main .wrapper-main-part .advantages .star-section h1 {
   position: absolute;
   left: 35px;
   font-style: normal;
@@ -1688,10 +1771,11 @@ main .advantages .star-section h1 {
   font-size: 36px;
   line-height: 44px;
 }
-main .advantages .star-description p {
+main .wrapper-main-part .advantages .star-description {
+  margin-top: 44px;
+}
+main .wrapper-main-part .advantages .star-description p {
   all: unset;
-  position: absolute;
-  top: 302px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -1699,8 +1783,8 @@ main .advantages .star-description p {
   color: #323264;
 }
 main .promo-image {
-  position: absolute;
-  top: 646px;
+  position: relative;
+  top: 60px;
   left: 0px;
   right: 0px;
   width: 100%;
@@ -1709,17 +1793,53 @@ main .promo-image {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .secondary-part p {
-  all: unset;
+main .secondary-part {
   position: absolute;
   top: 1144px;
   left: 180px;
-  width: 658px;
+  width: 580px;
+}
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  main .secondary-part {
+    width: 830px;
+    left: 280px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .secondary-part {
+    width: 400px;
+    position: absolute;
+    top: 1244px;
+    left: 60px;
+  }
+}
+main .secondary-part p {
+  all: unset;
   font-style: normal;
   font-weight: 400;
   font-size: 19px;
   line-height: 30px;
   color: #000000;
+  width: 580px;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+}
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  main .secondary-part p {
+    width: 830px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .secondary-part p {
+    width: 400px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
 }
 main .secondary-header h1 {
   width: 362px;
@@ -1730,6 +1850,17 @@ main .secondary-header h1 {
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
+}
+@media only screen and (min-width: 1920px) and (max-width: 3000px) {
+  main .secondary-header h1 {
+    left: 1280px;
+  }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px) {
+  main .secondary-header h1 {
+    left: 600px;
+    top: 1244px;
+  }
 }
 
 .top-footer {
