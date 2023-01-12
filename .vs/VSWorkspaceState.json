@@ -1,15 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\images",
-    "\\images\\bottom-carousel",
-    "\\images\\fb-logo-blue-jpg",
-    "\\images\\fb-logo-red",
-    "\\images\\footer-company-image-three",
-    "\\images\\horizontal-line-separator",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\scss\\header&footer.scss",
+  "SelectedNode": "\\scss\\typography.scss",
   "PreviewInSolutionExplorer": false
 }

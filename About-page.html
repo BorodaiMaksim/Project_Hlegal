@@ -110,8 +110,9 @@
                     </p>
                 </div>
             </div>
-            <div><img src="./images/vertical-line-separator/vertical-line-separator.svg" class="vertical-line-separator" /></div>
+            <div class="vertical-line-separator show-for-large"><img src="./images/vertical-line-separator/vertical-line-separator.svg"/></div>
             <div class="advantages">
+                <div class="vertical-line-separator show-for-small hide-for-large"><img src="./images/vertical-line-separator/vertical-line-separator.svg" /></div>
                 <div class="flag-section">
                     <img src="./images/flag-image/flag-image.svg" />
                     <h1>10+</h1>
@@ -143,22 +144,27 @@
             </p>
         </div>
         <div class="secondary-header">
-            <h1>Quality is what<br /> we care about the most.</h1>
+            <h1 class="show-for-large">Quality is what<br /> we care about the most.</h1>
+            <h1 class="show-for-medium-only">Quality is what we care about<br /> the most.</h1>
+            <h1 class="hide-for-medium">Quality is what we<br /> care about the<br />  most.</h1>
         </div>
     </main>
 
     <div class="top-footer">
         <p class="label">ACHIEVEMENTS</p>
         <div class="img-container">
-            <img src="./images/footer-company-image-one/Item.svg" />
-            <img src="./images/footer-company-image-two/Item.svg" />
-            <img src="./images/footer-company-image-three/Item.svg" />
-            <img src="./images/footer-company-image-four/Item.svg" />
+            <img src="./images/footer-company-image-one/Item.svg" class="company-image"/>
+            <img src="./images/footer-company-image-two/Item.svg" class="company-image show-for-medium" />
+            <img src="./images/footer-company-image-three/Item.svg" class="company-image show-for-medium" />
+            <img src="./images/footer-company-image-four/Item.svg" class="company-image show-for-medium"/>
         </div>
         <div class="bottom-container">
             <div class="bottom-carousel"></div>
             <div class="bottom-carousel"></div>
             <div class="bottom-carousel"></div>
+            <div class="bottom-carousel hide-for-medium"></div>
+            <div class="bottom-carousel hide-for-medium"></div>
+            <div class="bottom-carousel hide-for-medium"></div>
         </div>
         
     </div>
@@ -183,6 +189,7 @@
         </div>
     </div>
     <div class="mobile-footer hide-for-medium">
+        <div class="horizontal-line-separator"><img src="./images/horizontal-line-separator/Separator.svg" /></div>
         <div class="placement">
             <div class="main-text">Kyiv, Mechnikova str, 14/1</div>
             <a href="#">ON MAP</a>

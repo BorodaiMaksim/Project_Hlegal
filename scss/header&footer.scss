@@ -500,7 +500,7 @@
                 top: 0px;
                 left: 0px;
                 background-color: map-get($main, default);
-                opacity: 0.7;
+                opacity: 0.9;
                 z-index: 3;
 
 
@@ -718,94 +718,107 @@
     }
 }
 
-    .mobile-footer {
-        height: 276px;
-        background-color: map-get($grey, background);
-        width: 100%;
-        position: relative;
+.mobile-footer {
+    height: 276px;
+    background-color: map-get($grey, background);
+    width: 100%;
+    position: relative;
 
-        .placement {
-            position: absolute;
-            top: 30px;
-            left: 30px;
-            right: 30px;
-            bottom: 30px;
-            display: flex;
-            flex-direction: column;
+    .horizontal-line-separator {
+        position: absolute;
+        top: 5px;
+        left: 60px;
+        right: 60px;
+        z-index: 3;
 
-            .main-text {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                height: min-content;
-                margin: 0 auto;
-            }
-
-            a {
-                color: map-get($active, regular);
-                font-style: normal;
-                font-weight: 700;
-                font-size: 12px;
-                line-height: 15px;
-                margin: 10px auto 0 auto;
-                cursor: pointer;
-            }
-
-            .fb-logo {
-                height: 38px;
-                width: 38px;
-                margin: 21px auto 0 auto;
-                display: inline-block;
-                background-image: url("../images/fb-logo-blue/Vector.svg");
-            }
-
-            .fb-logo:hover {
-                height: 38px;
-                width: 38px;
-                margin: 21px auto 0 auto;
-                display: inline-block;
-                background-image: url("../images/fb-logo-red/Vector.svg");
-            }
-
-
-            .contact-information {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                color: map-get($main, alt);
-                margin: 10px auto 0 auto;
-            }
-
-            .email-information {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                color: map-get($active, default);
-                margin: 10px auto 0 auto;
-            }
-
-            .email-information:hover {
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
-                line-height: 20px;
-                color: map-get($accent, default);
-                cursor: pointer;
-            }
-
-            .note {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 20px;
-                color: map-get($grey, text);
-                margin: 30px auto 0 auto;
-            }
+        img {
+            z-index: 3;
+            width: 100%;
         }
     }
+
+    .placement {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        right: 30px;
+        bottom: 30px;
+        display: flex;
+        flex-direction: column;
+
+        .main-text {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            height: min-content;
+            margin: 0 auto;
+        }
+
+        a {
+            color: map-get($active, regular);
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            margin: 10px auto 0 auto;
+            cursor: pointer;
+        }
+
+        .fb-logo {
+            height: 38px;
+            width: 38px;
+            margin: 21px auto 0 auto;
+            display: inline-block;
+            background-image: url("../images/fb-logo-blue/Vector.svg");
+        }
+
+        .fb-logo:hover {
+            height: 38px;
+            width: 38px;
+            margin: 21px auto 0 auto;
+            display: inline-block;
+            background-image: url("../images/fb-logo-red/Vector.svg");
+        }
+
+
+        .contact-information {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: map-get($main, alt);
+            margin: 10px auto 0 auto;
+        }
+
+        .email-information {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: map-get($active, default);
+            margin: 10px auto 0 auto;
+        }
+
+        .email-information:hover {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            color: map-get($accent, default);
+            cursor: pointer;
+        }
+
+        .note {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: map-get($grey, text);
+            margin: 30px auto 0 auto;
+        }
+    }
+}
 
 
 

@@ -551,7 +551,7 @@ h1, .h1 {
   top: 0px;
   left: 0px;
   background-color: #323264;
-  opacity: 0.7;
+  opacity: 0.9;
   z-index: 3;
 }
 .header-bottom .wrapper .burger-menu .header-submenu ul {
@@ -744,6 +744,17 @@ h1, .h1 {
   background-color: #F5F5FA;
   width: 100%;
   position: relative;
+}
+.mobile-footer .horizontal-line-separator {
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  right: 60px;
+  z-index: 3;
+}
+.mobile-footer .horizontal-line-separator img {
+  z-index: 3;
+  width: 100%;
 }
 .mobile-footer .placement {
   position: absolute;
@@ -1339,7 +1350,7 @@ h1, .h1 {
   top: 0px;
   left: 0px;
   background-color: #323264;
-  opacity: 0.7;
+  opacity: 0.9;
   z-index: 3;
 }
 .header-bottom .wrapper .burger-menu .header-submenu ul {
@@ -1533,6 +1544,17 @@ h1, .h1 {
   width: 100%;
   position: relative;
 }
+.mobile-footer .horizontal-line-separator {
+  position: absolute;
+  top: 5px;
+  left: 60px;
+  right: 60px;
+  z-index: 3;
+}
+.mobile-footer .horizontal-line-separator img {
+  z-index: 3;
+  width: 100%;
+}
 .mobile-footer .placement {
   position: absolute;
   top: 30px;
@@ -1612,16 +1634,34 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-main {
+body {
+  overflow-x: hidden;
+}
+body main {
   height: 1335px;
   width: 100%;
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main {
+  body main {
     height: 1485px;
   }
 }
-main .wrapper-main-part {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main {
+    height: 1620px;
+  }
+}
+@media only screen and (min-width: 615px) and (max-width: 767px) {
+  body main {
+    height: 2090px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 614px) {
+  body main {
+    height: 2010px;
+  }
+}
+body main .wrapper-main-part {
   margin-top: 60px;
   margin-left: 180px;
   margin-right: 180px;
@@ -1631,43 +1671,90 @@ main .wrapper-main-part {
   gap: 30px;
 }
 @media only screen and (min-width: 1920px) and (max-width: 3000px) {
-  main .wrapper-main-part {
+  body main .wrapper-main-part {
     margin-left: 280px;
     margin-right: 280px;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .wrapper-main-part {
+  body main .wrapper-main-part {
     height: 470px;
     margin-left: 60px;
     margin-right: 60px;
   }
 }
-main .wrapper-main-part .main-content {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part {
+    height: 770px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part {
+    height: 1020px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+body main .wrapper-main-part .main-content {
   height: 380px;
   width: 580px;
 }
 @media only screen and (min-width: 1920px) and (max-width: 3000px) {
-  main .wrapper-main-part .main-content {
+  body main .wrapper-main-part .main-content {
     width: 830px;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .wrapper-main-part .main-content {
+  body main .wrapper-main-part .main-content {
     width: 400px;
     height: 470px;
   }
 }
-main .wrapper-main-part .main-content .content-header h1 {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .main-content {
+    height: 770px;
+    width: 550px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part .main-content {
+    height: 665px;
+    width: 280px;
+  }
+}
+body main .wrapper-main-part .main-content .content-header h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 38px;
   line-height: 46px;
 }
-main .wrapper-main-part .main-content .main-text {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part .main-content .content-header h1 {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+    width: 280px;
+  }
+}
+body main .wrapper-main-part .main-content .main-text {
   margin-top: 26px;
 }
-main .wrapper-main-part .main-content .main-text p {
+body main .wrapper-main-part .main-content .main-text p {
   all: unset;
   font-style: normal;
   font-weight: 400;
@@ -1680,34 +1767,81 @@ main .wrapper-main-part .main-content .main-text p {
   -ms-hyphens: auto;
 }
 @media only screen and (min-width: 1920px) and (max-width: 3000px) {
-  main .wrapper-main-part .main-content .main-text p {
+  body main .wrapper-main-part .main-content .main-text p {
     width: 830px;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .wrapper-main-part .main-content .main-text p {
+  body main .wrapper-main-part .main-content .main-text p {
     width: 400px;
   }
 }
-main .wrapper-main-part .advantages {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .main-content .main-text p {
+    width: 500px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part .main-content .main-text p {
+    display: inline-block;
+    width: 280px;
+  }
+}
+body main .wrapper-main-part .vertical-line-separator {
+  width: 5px;
+}
+body main .wrapper-main-part .advantages {
   height: 380px;
   width: 354px;
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .wrapper-main-part .advantages {
+  body main .wrapper-main-part .advantages {
     height: 470px;
   }
 }
-main .wrapper-main-part .advantages .flag-section {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages {
+    width: 360px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part .advantages {
+    width: 280px;
+    margin-left: 50px;
+  }
+}
+body main .wrapper-main-part .advantages .vertical-line-separator {
+  width: 4px;
+  position: absolute;
+  height: 302px;
+  margin: 0px;
+  left: 60px;
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part .advantages .vertical-line-separator {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    width: 100%;
+    left: -135px;
+  }
+}
+body main .wrapper-main-part .advantages .flag-section {
   width: 120px;
   height: 44px;
   position: relative;
 }
-main .wrapper-main-part .advantages .flag-section img {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages .flag-section {
+    left: 30px;
+  }
+}
+body main .wrapper-main-part .advantages .flag-section img {
   position: absolute;
   top: 8px;
 }
-main .wrapper-main-part .advantages .flag-section h1 {
+body main .wrapper-main-part .advantages .flag-section h1 {
   position: absolute;
   left: 35px;
   font-style: normal;
@@ -1715,7 +1849,7 @@ main .wrapper-main-part .advantages .flag-section h1 {
   font-size: 36px;
   line-height: 44px;
 }
-main .wrapper-main-part .advantages .flag-description p {
+body main .wrapper-main-part .advantages .flag-description p {
   all: unset;
   font-style: normal;
   font-weight: 400;
@@ -1723,17 +1857,27 @@ main .wrapper-main-part .advantages .flag-description p {
   line-height: 20px;
   color: #323264;
 }
-main .wrapper-main-part .advantages .bag-section {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages .flag-description p {
+    margin-left: 30px;
+  }
+}
+body main .wrapper-main-part .advantages .bag-section {
   position: relative;
   top: 40px;
   width: 97px;
   height: 44px;
 }
-main .wrapper-main-part .advantages .bag-section img {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages .bag-section {
+    left: 30px;
+  }
+}
+body main .wrapper-main-part .advantages .bag-section img {
   position: absolute;
   top: 4px;
 }
-main .wrapper-main-part .advantages .bag-section h1 {
+body main .wrapper-main-part .advantages .bag-section h1 {
   position: absolute;
   left: 35px;
   font-style: normal;
@@ -1741,10 +1885,15 @@ main .wrapper-main-part .advantages .bag-section h1 {
   font-size: 36px;
   line-height: 44px;
 }
-main .wrapper-main-part .advantages .bag-description {
+body main .wrapper-main-part .advantages .bag-description {
   margin-top: 44px;
 }
-main .wrapper-main-part .advantages .bag-description p {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages .bag-description {
+    margin-left: 30px;
+  }
+}
+body main .wrapper-main-part .advantages .bag-description p {
   all: unset;
   font-style: normal;
   font-weight: 400;
@@ -1753,17 +1902,31 @@ main .wrapper-main-part .advantages .bag-description p {
   color: #323264;
   width: 80%;
 }
-main .wrapper-main-part .advantages .star-section {
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .wrapper-main-part .advantages .bag-description p {
+    display: inline-block;
+    width: 250px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+body main .wrapper-main-part .advantages .star-section {
   position: relative;
   top: 40px;
   width: 97px;
   height: 44px;
 }
-main .wrapper-main-part .advantages .star-section img {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages .star-section {
+    left: 30px;
+  }
+}
+body main .wrapper-main-part .advantages .star-section img {
   position: absolute;
   top: 8px;
 }
-main .wrapper-main-part .advantages .star-section h1 {
+body main .wrapper-main-part .advantages .star-section h1 {
   position: absolute;
   left: 35px;
   font-style: normal;
@@ -1771,10 +1934,10 @@ main .wrapper-main-part .advantages .star-section h1 {
   font-size: 36px;
   line-height: 44px;
 }
-main .wrapper-main-part .advantages .star-description {
+body main .wrapper-main-part .advantages .star-description {
   margin-top: 44px;
 }
-main .wrapper-main-part .advantages .star-description p {
+body main .wrapper-main-part .advantages .star-description p {
   all: unset;
   font-style: normal;
   font-weight: 400;
@@ -1782,7 +1945,12 @@ main .wrapper-main-part .advantages .star-description p {
   line-height: 20px;
   color: #323264;
 }
-main .promo-image {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .wrapper-main-part .advantages .star-description p {
+    margin-left: 30px;
+  }
+}
+body main .promo-image {
   position: relative;
   top: 60px;
   left: 0px;
@@ -1793,27 +1961,74 @@ main .promo-image {
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .secondary-part {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .promo-image {
+    height: 235px;
+  }
+}
+@media only screen and (min-width: 615px) and (max-width: 767px) {
+  body main .promo-image {
+    height: 180px;
+    top: 30px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 614px) {
+  body main .promo-image {
+    height: 100px;
+    top: 30px;
+  }
+}
+body main .secondary-part {
   position: absolute;
   top: 1144px;
   left: 180px;
   width: 580px;
 }
 @media only screen and (min-width: 1920px) and (max-width: 3000px) {
-  main .secondary-part {
+  body main .secondary-part {
     width: 830px;
     left: 280px;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .secondary-part {
+  body main .secondary-part {
     width: 400px;
     position: absolute;
     top: 1244px;
     left: 60px;
   }
 }
-main .secondary-part p {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .secondary-part {
+    width: 565px;
+    position: absolute;
+    top: 1330px;
+    left: 60px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 614px) {
+  body main .secondary-part {
+    position: absolute;
+    top: 1330px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 615px) and (max-width: 767px) {
+  body main .secondary-part {
+    position: absolute;
+    top: 1410px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+body main .secondary-part p {
   all: unset;
   font-style: normal;
   font-weight: 400;
@@ -1826,7 +2041,7 @@ main .secondary-part p {
   -ms-hyphens: auto;
 }
 @media only screen and (min-width: 1920px) and (max-width: 3000px) {
-  main .secondary-part p {
+  body main .secondary-part p {
     width: 830px;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
@@ -1834,14 +2049,31 @@ main .secondary-part p {
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .secondary-part p {
+  body main .secondary-part p {
     width: 400px;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
   }
 }
-main .secondary-header h1 {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .secondary-part p {
+    width: 565px;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body main .secondary-part p {
+    width: 280px;
+    display: inline-block;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+}
+body main .secondary-header h1 {
   width: 362px;
   position: absolute;
   top: 1144px;
@@ -1852,24 +2084,53 @@ main .secondary-header h1 {
   line-height: 46px;
 }
 @media only screen and (min-width: 1920px) and (max-width: 3000px) {
-  main .secondary-header h1 {
+  body main .secondary-header h1 {
     left: 1280px;
   }
 }
 @media only screen and (min-width: 1280px) and (max-width: 1440px) {
-  main .secondary-header h1 {
+  body main .secondary-header h1 {
     left: 600px;
     top: 1244px;
   }
 }
-
-.top-footer {
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body main .secondary-header h1 {
+    width: 800px;
+    position: absolute;
+    top: 1700px;
+    left: 60px;
+  }
+}
+@media only screen and (min-width: 615px) and (max-width: 767px) {
+  body main .secondary-header h1 {
+    width: 285px;
+    position: absolute;
+    top: 2060px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 30px;
+    z-index: 3;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 614px) {
+  body main .secondary-header h1 {
+    width: 285px;
+    position: absolute;
+    top: 1980px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 30px;
+    z-index: 3;
+  }
+}
+body .top-footer {
   width: 100%;
   height: 250px;
   background-color: #F5F5FA;
   position: relative;
 }
-.top-footer .label {
+body .top-footer .label {
   position: absolute;
   top: 30px;
   left: 50%;
@@ -1883,16 +2144,31 @@ main .secondary-header h1 {
   color: #323264;
   background-color: #F5F5FA;
 }
-.top-footer .img-container {
+body .top-footer .img-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   gap: 40px;
   position: absolute;
+  justify-content: center;
   top: 77px;
   width: 100%;
+  height: max-content;
 }
-.top-footer .bottom-container {
+body .top-footer .img-container .company-image {
+  max-width: 20%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  body .top-footer .img-container .company-image {
+    max-width: 20%;
+    height: 110px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  body .top-footer .img-container .company-image {
+    max-width: 310px;
+  }
+}
+body .top-footer .bottom-container {
   position: absolute;
   top: 217px;
   width: 100%;
@@ -1901,13 +2177,13 @@ main .secondary-header h1 {
   justify-content: center;
   gap: 15px;
 }
-.top-footer .bottom-container .bottom-carousel {
+body .top-footer .bottom-container .bottom-carousel {
   height: 16px;
   width: 16px;
   display: inline-block;
   background-image: url("../images/bottom-carousel/Ellipse.svg");
 }
-.top-footer .bottom-container .bottom-carousel:hover {
+body .top-footer .bottom-container .bottom-carousel:hover {
   height: 16px;
   width: 16px;
   display: inline-block;
