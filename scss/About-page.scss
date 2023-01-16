@@ -12,6 +12,248 @@
 body {
     overflow-x: hidden;
 
+    header {
+        div {
+            .header-information {
+                .content-placement {
+                    .wrapper {
+                        .language-bottom {
+                            display: flex;
+                            align-items: center;
+
+                            ul {
+                                margin: 0px;
+                                padding: 0px;
+                            }
+
+                            ul li {
+                                list-style: none;
+                                display: inline;
+                                padding: 0px;
+                                margin: 0px;
+
+
+                                .english {
+                                    color: white;
+                                    padding: 5px 7px;
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 14px;
+                                    line-height: 15px;
+                                    border-radius: 8px;
+                                    background-color: map-get($accent, default);
+                                }
+                            }
+                        }
+                    }
+
+                    .navigation-menu {
+                        ul {
+                            li {
+                                .about-us {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: map-get($accent, default);
+                                    position: relative;
+                                }
+
+                                .about-us::after {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    transform: scaleX(0);
+                                    height: 2px;
+                                    bottom: 0;
+                                    left: 0;
+                                    background-color: map-get($active, default);
+                                    order: 1;
+                                    align-self: stretch;
+                                    flex-grow: 0;
+                                    transform-origin: bottom right;
+                                    transition: transform 0.25s ease-out;
+                                    z-index: 5;
+                                }
+
+                                .about-us:hover::after {
+                                    transform: scaleX(1);
+                                    transform-origin: bottom left;
+                                }
+
+                                .about-us:hover::after {
+                                    transform: scaleX(1);
+                                    transform-origin: bottom left;
+                                    background-color: map-get($active, default);
+                                }
+
+                                .about-us:hover {
+                                    color: map-get($active, default);
+                                }
+
+                                .about-us::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 16px;
+                                    left: 0px;
+                                    width: 65px;
+                                    height: 1.5px;
+                                    color: red;
+                                    background-color: red;
+                                    z-index: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div {
+            .wrapper {
+                .language-bottom {
+                    display: flex;
+                    align-items: center;
+
+                    ul {
+                        margin: 0px 0px 0px 15px;
+                        padding: 0;
+
+                        @media only screen and (min-width: 768px) and (max-width: 1280px) {
+                            margin: 0px 0px 0px 53px;
+                        }
+                    }
+
+                    ul li {
+                        list-style: none;
+                        display: inline;
+                        padding: 0px;
+                        margin: 0px;
+
+
+                        .english {
+                            padding: 5px 7px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            border-radius: 8px;
+                            background-color: map-get($accent, default);
+                            color: #fff;
+                        }
+                    }
+                }
+
+                .navigation-menu {
+                    position: absolute;
+                    top: 85px;
+                    margin-left: 60px;
+
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        gap: 15px;
+
+                        li {
+                            list-style: none;
+
+                            .about-us {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($accent, default);
+                                position: relative;
+                            }
+
+                            .about-us:hover {
+                                color: map-get($active, default);
+                            }
+
+                            a::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                transform: scaleX(0);
+                                height: 2px;
+                                bottom: 0;
+                                left: 0;
+                                background-color: map-get($active, default);
+                                order: 1;
+                                align-self: stretch;
+                                flex-grow: 0;
+                                transform-origin: bottom right;
+                                transition: transform 0.25s ease-out;
+                                z-index: 5;
+                            }
+
+                            a:hover::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                            }
+
+                            a:active::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                                background-color: map-get($accent, default);
+                            }
+
+                            a:active {
+                                color: map-get($accent, default);
+                            }
+
+                            .about-us::before {
+                                content: '';
+                                position: absolute;
+                                top: 16px;
+                                left: 0px;
+                                width: 65px;
+                                height: 2px;
+                                color: map-get($accent, default);
+                                background-color: red;
+                                z-index: 3;
+                            }
+                        }
+                    }
+                }
+
+                .burger-menu {
+                    .header-submenu {
+                        ul {
+                            li {
+                                .about-us {
+                                    margin: 0px;
+                                    padding: 0px;
+                                    display: block;
+                                    background-color: map-get($grey, background);
+                                    color: map-get($accent, default);
+                                    padding: 7px 12px;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    border-radius: 12px;
+                                    text-align: center;
+
+                                    &:hover {
+                                        background-color: map-get($grey, separator);
+                                        color: map-get($accent, default);
+                                    }
+
+                                    &:active {
+                                        color: map-get($accent, default);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     main {
         height: 1335px;
         width: 100%;
@@ -567,5 +809,6 @@ body {
         }
     }
 }
+
 
 
