@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\images\\first-team-person-image",
     "\\scss",
     "\\styles"
   ],
-  "SelectedNode": "\\header-footer.html",
+  "SelectedNode": "\\scss\\About-page.scss",
   "PreviewInSolutionExplorer": false
 }
