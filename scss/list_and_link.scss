@@ -12,11 +12,12 @@ ul li::marker {
     margin-left: -1em;
 }
 ol {
-    list-style:none;
-    counter-reset: li;
+    list-style: none;
+    counter-reset: item;
 }
 ol li::before {
-    content: counter(li);
+    content: counter(item) ". ";
+    counter-increment: item;
     color: map-get($accent, default);
     display: inline-block;
     width: 1em;

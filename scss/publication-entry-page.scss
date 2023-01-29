@@ -1,0 +1,855 @@
+﻿@import "./colors";
+@import "../node_modules/foundation-sites/scss/foundation";
+@import "./typography";
+@import "./header&footer";
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+
+    div {
+        .header-information {
+            .content-placement {
+
+                .navigation-menu {
+                    ul {
+                        li {
+                            .publication {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($accent, default);
+                                position: relative;
+                            }
+
+                            .publication::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                transform: scaleX(0);
+                                height: 2px;
+                                bottom: 0;
+                                left: 0;
+                                background-color: map-get($active, default);
+                                order: 1;
+                                align-self: stretch;
+                                flex-grow: 0;
+                                transform-origin: bottom right;
+                                transition: transform 0.25s ease-out;
+                                z-index: 5;
+                            }
+
+                            .publication:hover::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                            }
+
+                            .publication:hover::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                                background-color: map-get($active, default);
+                            }
+
+                            .publication:hover {
+                                color: map-get($active, default);
+                            }
+
+                            .publication::before {
+                                content: '';
+                                position: absolute;
+                                top: 16px;
+                                left: 0px;
+                                width: 94px;
+                                height: 1.5px;
+                                color: red;
+                                background-color: red;
+                                z-index: 3;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    div {
+        .wrapper {
+            .logo-wrapper-publication {
+                margin: 0px 0px 0px 15px;
+                padding: 0;
+                height: 100%;
+
+                @media only screen and (min-width: 768px) and (max-width: 1280px) {
+                    margin: 30px 0px 0px 60px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    margin: 30px 0px 0px 15px;
+                    padding: 0px;
+                    height: 100%;
+                }
+
+                .logo-image {
+                    padding: 20px 0px;
+
+                    img {
+                        width: 178px;
+
+                        @media only screen and (min-width: 768px) and (max-width: 1280px) {
+                            width: 248px;
+                        }
+                    }
+                }
+            }
+
+            .navigation-menu {
+                position: absolute;
+                top: 85px;
+                margin-left: 60px;
+
+                ul {
+                    margin: 0px;
+                    padding: 0px;
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    gap: 15px;
+
+                    li {
+                        list-style: none;
+
+                        .publication {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: map-get($accent, default);
+                            position: relative;
+                        }
+
+                        .publication:hover {
+                            color: map-get($active, default);
+                        }
+
+                        a::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            transform: scaleX(0);
+                            height: 2px;
+                            bottom: 0;
+                            left: 0;
+                            background-color: map-get($active, default);
+                            order: 1;
+                            align-self: stretch;
+                            flex-grow: 0;
+                            transform-origin: bottom right;
+                            transition: transform 0.25s ease-out;
+                            z-index: 5;
+                        }
+
+                        a:hover::after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                        }
+
+                        a:active::after {
+                            transform: scaleX(1);
+                            transform-origin: bottom left;
+                            background-color: map-get($accent, default);
+                        }
+
+                        a:active {
+                            color: map-get($accent, default);
+                        }
+
+                        .publication::before {
+                            content: '';
+                            position: absolute;
+                            top: 16px;
+                            left: 0px;
+                            width: 94px;
+                            height: 2px;
+                            color: map-get($accent, default);
+                            background-color: red;
+                            z-index: 3;
+                        }
+                    }
+                }
+            }
+
+            .burger-menu {
+                .header-submenu {
+                    ul {
+                        li {
+                            .publication {
+                                margin: 0px;
+                                padding: 0px;
+                                display: block;
+                                background-color: map-get($grey, background);
+                                color: map-get($accent, default);
+                                padding: 7px 12px;
+                                font-size: 24px;
+                                font-weight: 700;
+                                border-radius: 12px;
+                                text-align: center;
+
+                                &:hover {
+                                    background-color: map-get($grey, separator);
+                                    color: map-get($accent, default);
+                                }
+
+                                &:active {
+                                    color: map-get($accent, default);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-publication-entry-page {
+        width: 100%;
+        height: 3100px;
+
+        @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+            height: 3150px;
+        }
+
+        @media only screen and (min-width: 768px) and (max-width: 1279px) {
+            height: 4000px;
+        }
+
+        @media only screen and (min-width: 320px) and (max-width: 767px) {
+            height: 5300px;
+        }
+
+        .main-part-wrapper {
+            width: 1080px;
+            height: max-content;
+            position: relative;
+            top: 30px;
+            left: 50%;
+            transform: translate(-50%,0);
+
+            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                width: 1360px;
+            }
+
+            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                width: 900px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                width: 650px;
+                position: relative;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                width: 315px;
+                position: relative;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%,0);
+            }
+
+            .image-publication-card {
+                width: 1080px;
+                border-radius: 12px;
+                margin: 0;
+                padding: 0;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .sedond-level-header {
+                margin: 30px 0px 0px 0px;
+                width: 1040px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 37px;
+                color: map-get($main, default);
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1260px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 800px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 620px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 300px;
+                }
+            }
+
+            .date-text {
+                margin: 15px 0px 0px 0px;
+                padding: 0px;
+                width: 1080px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: map-get($grey, text);
+            }
+
+            .first-horizontal-line-separator-image {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 1080px;
+                height: 4px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .title-description {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 1080px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #000000;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 620px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .first-level-header {
+                width: 980px;
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1220px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 850px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 620px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 320px;
+                }
+            }
+
+            .third-level-header {
+                width: 1080px;
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                color: map-get($main, alt);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .header-lists {
+                margin: 15px 0px 0px 20px;
+                padding-left: 20px;
+
+                li {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
+                    color: #000000;
+
+                    @media only screen and (min-width: 320px) and (max-width: 767px) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+
+            .additional-information {
+                margin: 25px 0px 0px 0px;
+                padding: 0px;
+                width: 1060px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .picture-wrapper {
+                display: block;
+                width: 1080px;
+                height: max-content;
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+
+                .big-icon-in-publication-entry {
+                    width: 640px;
+                    margin-left: 50%;
+                    transform: translate(-50%, 0);
+
+                    @media only screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 315px;
+                    }
+                }
+
+                .caption-picture {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 22px;
+                    text-align: center;
+                    color: map-get($grey, text);
+                }
+            }
+
+            .second-additional-information {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 1080px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 26px;
+                color: #000000;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .fifth-level-header {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 1020px;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 27px;
+                color: map-get($main, default);
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .third-additional-information {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 1080px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 26px;
+                color: #000000;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .second-horizontal-line-separator-image {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 1080px;
+                height: 4px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1360px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 650px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 315px;
+                }
+            }
+
+            .icon-wrapper {
+                margin: 30px 0px 0px 0px;
+                padding: 0px;
+                width: 180px;
+                height: 45px;
+
+                .square-icon {
+                    margin-right: 10px;
+                }
+
+                .square-icon:hover {
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background-color: map-get($grey, background-alt);
+                }
+            }
+        }
+
+        .second-part-wrapper {
+            position: relative;
+            top: 80px;
+            width: 100%;
+            background-color: map-get($grey, background);
+            height: 650px;
+
+            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                height: 720px;
+            }
+
+            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                height: 650px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                height: 1250px;
+            }
+
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                height: 1750px;
+            }
+
+            .second-header-in-second-part {
+                position: absolute;
+                top: 80px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: map-get($active, default);
+            }
+
+            .first-header-in-second-part {
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            .grid-wrapper {
+                position: relative;
+                top: 130px;
+                width: max-content;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 500px;
+                display: grid;
+                grid-template-columns: 420px 420px 420px;
+                gap: 30px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    grid-template-columns: 515px 515px 515px;
+                    height: 550px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    grid-template-columns: 280px 280px 280px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    grid-template-columns: 310px 310px;
+                    grid-row-gap: 30px;
+                    grid-column-gap: 30px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    grid-template-columns: 320px;
+                    height: 1580px;
+                }
+
+
+                .card-wrapper {
+                    width: 420px;
+                    height: 500px;
+                    border: 0px 0px 8px 8px;
+                    background-color: azure;
+
+                    @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                        width: 515px;
+                        height: 550px;
+                    }
+
+                    @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                        width: 280px;
+                    }
+
+                    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 310px;
+                    }
+
+                    @media only screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 320px;
+                        height: 500px;
+                    }
+
+
+                    img {
+                        width: 100%;
+                        border-radius: 8px 8px 0px 0px;
+                    }
+
+                    .card-section {
+                        margin: 0px;
+                        padding: 0px;
+                        width: 100%;
+                        height: max-content;
+
+                        .card-header {
+                            margin: 30px 0px 0px 30px;
+                            padding: 0px;
+                            width: 360px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: map-get($active, default);
+
+                            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                                width: 200px;
+                            }
+
+                            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                                width: 400px;
+                            }
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 225px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 230px;
+                            }
+                        }
+
+                        .date-title {
+                            margin: 15px 0px 0px 30px;
+                            padding: 0px;
+                            width: 360px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: map-get($grey, text);
+                        }
+
+                        .horizontal-line-separator-image {
+                            margin: 5px 5% 0px 5%;
+                            padding: 0px;
+                            width: 90%;
+                            height: 5px;
+                        }
+
+                        .description-link {
+                            margin: 25px 0px 0px 30px;
+                            padding: 0px;
+                            display: block;
+                            width: 320px;
+                            -moz-hyphens: auto;
+                            -webkit-hyphens: auto;
+                            -ms-hyphens: auto;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #000000;
+                            cursor: pointer;
+
+                            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                                width: 405px;
+                            }
+
+                            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                                width: 205px;
+                            }
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 220px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 220px;
+                            }
+                        }
+                    }
+                }
+
+                .card-wrapper-modified {
+                    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 650px;
+                        height: 580px;
+                        border: 0px 0px 8px 8px;
+                        background-color: azure;
+                    }
+
+                    .card-section {
+
+                        .description-link {
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 620px;
+                            }
+                        }
+
+                        .card-header {
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 620px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
