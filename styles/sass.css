@@ -106,7 +106,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -119,12 +119,12 @@ h1, .h1 {
     margin: 0px 0px 0px 60px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .logo {
     margin: 0px 0px 0px 160px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
@@ -132,17 +132,17 @@ h1, .h1 {
     width: 318px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 160px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -905,7 +905,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -918,12 +918,12 @@ h1, .h1 {
     margin: 0px 0px 0px 60px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .logo {
     margin: 0px 0px 0px 160px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
@@ -931,17 +931,17 @@ h1, .h1 {
     width: 318px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 160px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -2453,7 +2453,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -2466,12 +2466,12 @@ h1, .h1 {
     margin: 0px 0px 0px 60px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .logo {
     margin: 0px 0px 0px 160px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
@@ -2479,17 +2479,17 @@ h1, .h1 {
     width: 318px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 160px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -3697,7 +3697,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -3710,12 +3710,12 @@ h1, .h1 {
     margin: 0px 0px 0px 60px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .logo {
     margin: 0px 0px 0px 160px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
@@ -3723,17 +3723,17 @@ h1, .h1 {
     width: 318px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 160px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -4914,7 +4914,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -4927,12 +4927,12 @@ h1, .h1 {
     margin: 0px 0px 0px 60px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .logo {
     margin: 0px 0px 0px 160px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
@@ -4940,17 +4940,17 @@ h1, .h1 {
     width: 318px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 160px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;
@@ -6525,7 +6525,7 @@ h1, .h1 {
   box-sizing: border-box;
 }
 
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large {
     height: 146px;
     background-color: #fff;
@@ -6538,12 +6538,12 @@ h1, .h1 {
     margin: 0px 0px 0px 60px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .logo {
     margin: 0px 0px 0px 160px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .logo .logo-image {
     padding: 20px 0px;
   }
@@ -6551,17 +6551,17 @@ h1, .h1 {
     width: 318px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 60px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) and (min-width: 1920px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) and (min-width: 1920px) and (max-width: 30000px) {
   .header-for-large .header-information {
     margin: 0px 160px 0px 0px;
   }
 }
-@media only screen and (min-width: 1280px) and (max-width: 3000px) {
+@media only screen and (min-width: 1280px) and (max-width: 30000px) {
   .header-for-large .header-information .content-placement {
     display: flex;
     flex-direction: column;

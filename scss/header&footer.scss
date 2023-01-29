@@ -11,7 +11,7 @@
 
 
 .header-for-large {
-    @media only screen and (min-width: 1280px) and (max-width: 3000px) {
+    @media only screen and (min-width: 1280px) and (max-width: 30000px) {
         height: 146px;
         background-color: #fff;
         display: flex;
@@ -22,7 +22,7 @@
         .logo {
             margin: 0px 0px 0px 60px;
 
-            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+            @media only screen and (min-width: 1920px) and (max-width: 30000px) {
                 margin: 0px 0px 0px 160px;
             }
 
@@ -38,7 +38,7 @@
         .header-information {
             margin: 0px 60px 0px 0px;
 
-            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+            @media only screen and (min-width: 1920px) and (max-width: 30000px) {
                 margin: 0px 160px 0px 0px;
             }
 
