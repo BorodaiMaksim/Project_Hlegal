@@ -1,0 +1,607 @@
+﻿@import "./colors";
+@import "../node_modules/foundation-sites/scss/foundation";
+@import "./typography";
+@import "./header&footer";
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+
+    .header-service {
+        .header-for-large {
+            background: map-get($gradient, super-soft);
+
+            .header-information {
+                .content-placement {
+                    .wrapper {
+                        .language-bottom {
+                            ul {
+                                li {
+                                    a {
+                                        color: white;
+                                    }
+                                }
+                            }
+                        }
+
+                        .contact-information {
+                            a {
+                                color: white;
+                            }
+                        }
+                    }
+
+                    .navigation-menu {
+                        ul {
+                            li {
+                                .service {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: map-get($accent, default);
+                                    position: relative;
+                                }
+
+                                .navigation-about {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: white;
+                                    position: relative;
+                                }
+
+                                .navigation-about:hover {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: map-get($active, default);
+                                    position: relative;
+                                }
+
+                                .navigation-team {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: white;
+                                    position: relative;
+                                }
+
+                                .navigation-team:hover {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: map-get($active, default);
+                                    position: relative;
+                                }
+
+                                .navigation-publications {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: white;
+                                    position: relative;
+                                }
+
+                                .navigation-publications:hover {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: map-get($active, default);
+                                    position: relative;
+                                }
+
+                                .navigation-contact {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: white;
+                                    position: relative;
+                                }
+
+                                .navigation-contact:hover {
+                                    font-style: normal;
+                                    font-weight: 700;
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                    color: map-get($active, default);
+                                    position: relative;
+                                }
+
+
+                                .service::after {
+                                    content: '';
+                                    position: absolute;
+                                    width: 100%;
+                                    transform: scaleX(0);
+                                    height: 2px;
+                                    bottom: 0;
+                                    left: 0;
+                                    background-color: map-get($active, default);
+                                    order: 1;
+                                    align-self: stretch;
+                                    flex-grow: 0;
+                                    transform-origin: bottom right;
+                                    transition: transform 0.25s ease-out;
+                                    z-index: 5;
+                                }
+
+                                .service:hover::after {
+                                    transform: scaleX(1);
+                                    transform-origin: bottom left;
+                                }
+
+                                .service:hover::after {
+                                    transform: scaleX(1);
+                                    transform-origin: bottom left;
+                                    background-color: map-get($active, default);
+                                }
+
+                                .service:hover {
+                                    color: map-get($active, default);
+                                }
+
+
+                                .service::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 16px;
+                                    left: 0px;
+                                    width: 63px;
+                                    height: 1.5px;
+                                    color: red;
+                                    background-color: red;
+                                    z-index: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-top {
+            background: map-get($gradient, super-soft);
+
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                background: #323264ba;
+            }
+
+            .wrapper {
+                .language-bottom {
+                    ul {
+                        li {
+                            a {
+                                color: white;
+                                padding: 5px 7px;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 12px;
+                                line-height: 15px;
+                                border-radius: 8px;
+                            }
+
+                            a:hover {
+                                background-color: map-get($accent, default);
+                                color: white;
+                            }
+                        }
+                    }
+                }
+
+                .contact-information {
+                    a {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 12px;
+                        line-height: 20px;
+                        color: white;
+                        padding: 15px 0px;
+                    }
+                }
+            }
+        }
+
+        .header-bottom {
+            background: map-get($gradient, super-soft);
+
+            .wrapper {
+                .logo-wrapper-publication {
+                    margin: 0px 0px 0px 15px;
+                    padding: 0;
+                    height: 100%;
+
+                    @media only screen and (min-width: 768px) and (max-width: 1280px) {
+                        margin: 30px 0px 0px 60px;
+                    }
+
+                    @media only screen and (min-width: 320px) and (max-width: 767px) {
+                        margin: 30px 0px 0px 15px;
+                        padding: 0px;
+                        height: 100%;
+                    }
+
+                    .logo-image {
+                        padding: 20px 0px;
+
+                        img {
+                            width: 178px;
+
+                            @media only screen and (min-width: 768px) and (max-width: 1280px) {
+                                width: 248px;
+                            }
+                        }
+                    }
+                }
+
+                .navigation-menu {
+                    position: absolute;
+                    top: 85px;
+                    margin-left: 60px;
+
+                    ul {
+                        margin: 0px;
+                        padding: 0px;
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        gap: 15px;
+
+                        li {
+                            list-style: none;
+
+                            .service {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($accent, default);
+                                position: relative;
+                            }
+
+                            .navigation-about {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: white;
+                                position: relative;
+                            }
+
+                            .navigation-about:hover {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($active, default);
+                                position: relative;
+                            }
+
+                            .navigation-team {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: white;
+                                position: relative;
+                            }
+
+                            .navigation-team:hover {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($active, default);
+                                position: relative;
+                            }
+
+                            .navigation-publications {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: white;
+                                position: relative;
+                            }
+
+                            .navigation-publications:hover {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($active, default);
+                                position: relative;
+                            }
+
+                            .navigation-contact {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: white;
+                                position: relative;
+                            }
+
+                            .navigation-contact:hover {
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                color: map-get($active, default);
+                                position: relative;
+                            }
+
+
+                            .service:hover {
+                                color: map-get($active, default);
+                            }
+
+                            a::after {
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                transform: scaleX(0);
+                                height: 2px;
+                                bottom: 0;
+                                left: 0;
+                                background-color: map-get($active, default);
+                                order: 1;
+                                align-self: stretch;
+                                flex-grow: 0;
+                                transform-origin: bottom right;
+                                transition: transform 0.25s ease-out;
+                                z-index: 5;
+                            }
+
+                            a:hover::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                            }
+
+                            a:active::after {
+                                transform: scaleX(1);
+                                transform-origin: bottom left;
+                                background-color: map-get($accent, default);
+                            }
+
+                            a:active {
+                                color: map-get($accent, default);
+                            }
+
+                            .service::before {
+                                content: '';
+                                position: absolute;
+                                top: 16px;
+                                left: 0px;
+                                width: 63px;
+                                height: 2px;
+                                color: map-get($accent, default);
+                                background-color: red;
+                                z-index: 3;
+                            }
+                        }
+                    }
+                }
+
+                .burger-menu {
+                    label {
+                        .hamburger {
+                            @include hamburger;
+                            background-color: white;
+                            box-shadow: 0px 0px 0px 8px white;
+                            border-radius: 4px;
+                        }
+                    }
+
+                    .header-submenu {
+                        ul {
+                            li {
+                                .service {
+                                    margin: 0px;
+                                    padding: 0px;
+                                    display: block;
+                                    background-color: map-get($grey, background);
+                                    color: map-get($accent, default);
+                                    padding: 7px 12px;
+                                    font-size: 24px;
+                                    font-weight: 700;
+                                    border-radius: 12px;
+                                    text-align: center;
+
+                                    &:hover {
+                                        background-color: map-get($grey, separator);
+                                        color: map-get($accent, default);
+                                    }
+
+                                    &:active {
+                                        color: map-get($accent, default);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .main-service-page {
+        width: 100%;
+        height: 3500px;
+
+        .first-part-wrapper {
+            width: 100%;
+            height: 920px;
+            background: map-get($gradient, super-soft);
+            border-bottom: 1px solid map-get($gradient, super-soft);
+            border-radius: 0px 0px 12px 12px;
+
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                height: 2520px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                height: 1450px;
+            }
+
+            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                height: 980px;
+            }
+
+            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                height: 820px;
+            }
+
+            .main-header-service {
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+                width: 1320px;
+                margin: 0px 0px 0px 50%;
+                padding: 30px 0px 0px 0px;
+                transform: translate(-50%, 0);
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    width: 1620px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    width: 900px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 600px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 350px;
+                }
+            }
+
+            .grid-wrapper {
+                position: relative;
+                top: 60px;
+                width: max-content;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: max-content;
+                display: grid;
+                grid-template-columns: 400px 400px 400px;
+                gap: 60px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    grid-template-columns: 500px 500px 500px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    grid-template-columns: 260px 260px 260px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    grid-template-columns: 300px 300px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    grid-template-columns: 350px;
+                }
+
+                .card-wrapper {
+                    img {
+                    }
+
+                    .card-wrapper-section {
+                        padding: 0;
+                        margin: 0;
+                        width: 100%;
+                        height: max-content;
+
+                        .header-card {
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 22px;
+                            line-height: 27px;
+                            width: 275px;
+                            margin: 0;
+                            padding: 30px 0px 0px 0px;
+                            color: map-get($active, default);
+
+                            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                                width: 495px;
+                            }
+
+                            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                                width: 250px;
+                            }
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 250px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 250px;
+                            }
+                        }
+
+                        .header-card:hover {
+                            color: map-get($accent, default);
+                        }
+
+                        .description-link-information {
+                            width: 350px;
+                            display: block;
+                            margin: 0px;
+                            padding: 15px 0px 0px 0px;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 26px;
+                            color: white;
+
+                            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                                width: 495px;
+                            }
+
+                            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                                width: 250px;
+                            }
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 250px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 250px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .first-fatty-horizontal-separator {
+            margin: 0px 0px 0px 50%;
+            padding: 0px 0px 20px 0px;
+            transform: translate(-50%, 0);
+            width: 98%;
+
+            @media only screen and (min-width: 320px) and (max-width: 1440px) {
+                padding: 0px 0px 25px 0px;
+            }
+        }
+    }
+}
