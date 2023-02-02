@@ -18,6 +18,14 @@ body {
         .header-for-large {
             background: map-get($gradient, super-soft);
 
+            .logo {
+                .logo-image {
+                    img {
+                        width: 230px;
+                    }
+                }
+            }
+
             .header-information {
                 .content-placement {
                     .wrapper {
@@ -206,10 +214,10 @@ body {
                         padding: 20px 0px;
 
                         img {
-                            width: 178px;
+                            width: 80px;
 
                             @media only screen and (min-width: 768px) and (max-width: 1280px) {
-                                width: 248px;
+                                width: 140px;
                             }
                         }
                     }

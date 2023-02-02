@@ -13366,6 +13366,9 @@ body {
 body .header-homepage .header-for-large {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
 }
+body .header-homepage .header-for-large .logo .logo-image img {
+  width: 230px;
+}
 body .header-homepage .header-for-large .header-information .content-placement .wrapper .language-bottom ul li a {
   color: white;
 }
@@ -13510,11 +13513,11 @@ body .header-homepage .header-bottom .wrapper .logo-wrapper-publication .logo-im
   padding: 20px 0px;
 }
 body .header-homepage .header-bottom .wrapper .logo-wrapper-publication .logo-image img {
-  width: 178px;
+  width: 80px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
   body .header-homepage .header-bottom .wrapper .logo-wrapper-publication .logo-image img {
-    width: 248px;
+    width: 140px;
   }
 }
 body .header-homepage .header-bottom .wrapper .navigation-menu {
