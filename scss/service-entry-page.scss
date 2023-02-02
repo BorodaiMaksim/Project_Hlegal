@@ -15,14 +15,16 @@ body {
 
     .main-service-entry-page {
         width: 100%;
-        height: 2000px;
+        height: max-content;
+
 
         .general-part-wrapper {
             width: 100%;
-            height: max-content;
             background: map-get($gradient, super-soft);
-            border-bottom: 1px solid map-get($gradient, super-soft);
+            border-bottom: 1px solid #090665;
             border-radius: 0px 0px 12px 12px;
+            padding: 0px;
+            margin: 0px;
 
             .first-grid-icon-service {
                 width: auto;
@@ -61,8 +63,9 @@ body {
                 margin: 30px 0px 0px 0px;
                 padding: 0;
 
-                .submit-consultation {
+                .popup {
                     margin: 0px 0px 0px 50%;
+                    padding: 18px;
                     transform: translate(-50%, 0);
                     width: 210px;
                     height: 60px;
@@ -75,11 +78,539 @@ body {
                     font-size: 16px;
                     line-height: 20px;
                     text-align: center;
-                }
-
-                .submit-consultation:hover {
                     cursor: pointer;
-                    color: map-get($grey, text);
+
+                    .popup-submenu {
+                        visibility: hidden;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: map-get($grey, background);
+                        box-shadow: 100em 0px 0px 200em rgba(50, 50, 100, 0.9);
+                        width: 510px;
+                        height: 600px;
+                        border-radius: 12px;
+
+
+                        @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                            width: 650px;
+                        }
+
+                        @media only screen and (min-width: 320px) and (max-width: 767px) {
+                            width: 320px;
+                            height: 640px;
+                        }
+
+                        .close-button {
+                            position: absolute;
+                            top: 35px;
+                            right: 25px;
+                            width: 32px;
+                            height: 32px;
+                            opacity: 0.3;
+                        }
+
+                        .close-button:hover {
+                            opacity: 1;
+                        }
+
+                        .close-button:before, .close-button:after {
+                            position: absolute;
+                            left: 15px;
+                            content: ' ';
+                            height: 33px;
+                            width: 2px;
+                            background-color: map-get($accent, default);
+                        }
+
+                        .close-button:before {
+                            transform: rotate(45deg);
+                        }
+
+                        .close-button:after {
+                            transform: rotate(-45deg);
+                        }
+
+                        .forms-header {
+                            position: absolute;
+                            top: 30px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 30px;
+                            line-height: 37px;
+                            width: max-content;
+                            height: 38px;
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 200px;
+                                -moz-hyphens: auto;
+                                -webkit-hyphens: auto;
+                                -ms-hyphens: auto;
+                                height: 80px;
+                            }
+                        }
+
+                        .contact-form {
+                            position: absolute;
+                            top: 100px;
+                            left: 50%;
+                            transform: translate(-50%, 0);
+                            width: 450px;
+                            height: 500px;
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 590px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 320px;
+                                height: 500px;
+                                top: 130px;
+                                text-align: center;
+                            }
+
+                            .input-name {
+                                width: 450px;
+                                height: 55px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid white;
+                                margin: 0px 0px 15px 0px;
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                input {
+                                    display: inline;
+                                }
+                            }
+
+                            .input-name::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-name:hover::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-name:focus::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-name:focus {
+                                width: 450px;
+                                height: 55px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($active, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-name:invalid::placeholder {
+                                color: map-get($accent, default);
+                            }
+
+                            .input-name:invalid {
+                                width: 450px;
+                                height: 55px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($accent, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-name:disabled::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-name:invalid {
+                                width: 450px;
+                                height: 55px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($grey, background-alt);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-message {
+                                width: 450px;
+                                height: 130px;
+                                padding: 15px 0px 0px 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid white;
+                                margin: 0px 0px 30px 0px;
+                                vertical-align: top;
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-message::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-message:hover::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-message:focus::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-message:focus {
+                                width: 450px;
+                                height: 130px;
+                                padding: 15px 0px 0px 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($active, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-message:invalid::placeholder {
+                                color: map-get($accent, default);
+                            }
+
+                            .input-message:invalid {
+                                width: 450px;
+                                height: 130px;
+                                padding: 15px 0px 0px 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($accent, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-message:disabled::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-message:invalid {
+                                width: 450px;
+                                height: 130px;
+                                padding: 15px 0px 0px 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($grey, background-alt);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .second-forms-header {
+                                margin: 0px 0px 15px 0px;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 14px;
+                                line-height: 17px;
+                                letter-spacing: 1px;
+                                text-transform: uppercase;
+                                color: map-get($grey, text);
+                            }
+
+                            .input-number {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid white;
+                                margin: 0px 0px 15px 0px;
+                                vertical-align: top;
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-number::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-number:hover::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-number:focus::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-number:focus {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($active, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-number:invalid::placeholder {
+                                color: map-get($accent, default);
+                            }
+
+                            .input-number:invalid {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($accent, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-number:disabled::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-number:invalid {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($grey, background-alt);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-email {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid white;
+                                margin: 0px 0px 30px 0px;
+                                vertical-align: top;
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-email::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-email:hover::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-email:focus::placeholder {
+                                color: #000000;
+                            }
+
+                            .input-email:focus {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($active, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-email:invalid::placeholder {
+                                color: map-get($accent, default);
+                            }
+
+                            .input-email:invalid {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($accent, default);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .input-email:disabled::placeholder {
+                                color: map-get($grey, text);
+                            }
+
+                            .input-email:invalid {
+                                width: 450px;
+                                height: 56px;
+                                padding: 15px;
+                                background-color: #ffffff;
+                                border-radius: 8px;
+                                border: 1px solid map-get($grey, background-alt);
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .submit-form {
+                                width: 450px;
+                                height: 56px;
+                                padding: 18px 0px;
+                                background-color: map-get($active, default);
+                                border-radius: 12px;
+                                border: 1px solid map-get($active, default);
+                                color: #ffffff;
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 20px;
+                                text-align: center;
+                                cursor: pointer;
+
+                                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                    width: 590px;
+                                }
+
+                                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                    width: 260px;
+                                }
+                            }
+
+                            .submit-form:hover {
+                                background-color: map-get($active, hover);
+                            }
+
+                            .submit-form:active {
+                                background-color: map-get($active, active);
+                            }
+
+                            .submit-form {
+                                background-color: map-get($active, active);
+                            }
+                        }
+                    }
+
+                    .show {
+                        visibility: visible;
+                        -webkit-animation: fadeIn 1s;
+                        animation: fadeIn 1s
+                    }
+
+                    @-webkit-keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                    }
+
+                    @keyframes fadeIn {
+                        from {
+                            opacity: 0;
+                        }
+
+                        to {
+                            opacity: 1;
+                        }
+                    }
                 }
             }
 
@@ -105,22 +636,275 @@ body {
                 margin: 30px auto;
                 width: 80%;
                 display: grid;
-                grid-template-columns: 50% 50%;
-                gap: 60px;
+                grid-template-columns: 45% 45%;
+                gap: 10%;
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    margin: 30px auto;
+                    width: 80%;
+                    display: grid;
+                    grid-template-columns: 100%;
+                    gap: 30px;
+                }
+
 
                 .first-ul {
-                    width: 100%;
 
                     li {
-                        word-break: break-all;
+                        line-break: normal;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #ffffff;
+                        margin: 0px 0px 10px 0px;
                     }
                 }
 
                 .second-ul {
-                    width: 100%;
 
                     li {
-                        word-break: break-all;
+                        line-break: normal;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 26px;
+                        color: #ffffff;
+                        margin: 0px 0px 10px 0px;
+                    }
+                }
+            }
+        }
+
+        .fatty-horizontal-separator {
+            margin: 0px 0px 0px 50%;
+            padding: 0px 0px 20px 0px;
+            transform: translate(-50%, 0);
+            width: 98%;
+
+            @media only screen and (min-width: 320px) and (max-width: 1440px) {
+                padding: 0px 0px 25px 0px;
+            }
+        }
+
+        .additional-part-wrapper {
+            position: relative;
+            top: 50px;
+            width: 100%;
+            background-color: map-get($grey, background);
+            height: 650px;
+
+            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                height: 720px;
+            }
+
+            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                height: 650px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                height: 1250px;
+            }
+
+            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                height: 1750px;
+            }
+
+            .second-header-in-second-part {
+                position: absolute;
+                top: 80px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: map-get($active, default);
+            }
+
+            .first-header-in-second-part {
+                position: absolute;
+                top: 30px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                font-style: normal;
+                font-weight: 700;
+                font-size: 38px;
+                line-height: 46px;
+            }
+
+            .grid-wrapper {
+                position: relative;
+                top: 130px;
+                width: max-content;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 500px;
+                display: grid;
+                grid-template-columns: 420px 420px 420px;
+                gap: 30px;
+
+                @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                    grid-template-columns: 515px 515px 515px;
+                    height: 550px;
+                }
+
+                @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                    grid-template-columns: 280px 280px 280px;
+                }
+
+                @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                    grid-template-columns: 310px 310px;
+                    grid-row-gap: 30px;
+                    grid-column-gap: 30px;
+                }
+
+                @media only screen and (min-width: 320px) and (max-width: 767px) {
+                    grid-template-columns: 320px;
+                    height: 1580px;
+                }
+
+
+                .card-wrapper {
+                    width: 420px;
+                    height: 500px;
+                    border: 0px 0px 8px 8px;
+                    background-color: azure;
+
+                    @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                        width: 515px;
+                        height: 550px;
+                    }
+
+                    @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                        width: 280px;
+                    }
+
+                    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 310px;
+                    }
+
+                    @media only screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 320px;
+                        height: 500px;
+                    }
+
+
+                    img {
+                        width: 100%;
+                        border-radius: 8px 8px 0px 0px;
+                    }
+
+                    .card-section {
+                        margin: 0px;
+                        padding: 0px;
+                        width: 100%;
+                        height: max-content;
+
+                        .card-header {
+                            margin: 30px 0px 0px 30px;
+                            padding: 0px;
+                            width: 360px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 20px;
+                            color: map-get($active, default);
+
+                            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                                width: 200px;
+                            }
+
+                            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                                width: 400px;
+                            }
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 225px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 230px;
+                            }
+                        }
+
+                        .date-title {
+                            margin: 15px 0px 0px 30px;
+                            padding: 0px;
+                            width: 360px;
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 12px;
+                            line-height: 15px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            color: map-get($grey, text);
+                        }
+
+                        .horizontal-line-separator-image {
+                            margin: 5px 5% 0px 5%;
+                            padding: 0px;
+                            width: 90%;
+                            height: 5px;
+                        }
+
+                        .description-link {
+                            margin: 25px 0px 0px 30px;
+                            padding: 0px;
+                            display: block;
+                            width: 320px;
+                            -moz-hyphens: auto;
+                            -webkit-hyphens: auto;
+                            -ms-hyphens: auto;
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 22px;
+                            color: #000000;
+                            cursor: pointer;
+
+                            @media only screen and (min-width: 1920px) and (max-width: 3000px) {
+                                width: 405px;
+                            }
+
+                            @media only screen and (min-width: 1280px) and (max-width: 1440px) {
+                                width: 205px;
+                            }
+
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 220px;
+                            }
+
+                            @media only screen and (min-width: 320px) and (max-width: 767px) {
+                                width: 220px;
+                            }
+                        }
+                    }
+                }
+
+                .card-wrapper-modified {
+                    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 650px;
+                        height: 580px;
+                        border: 0px 0px 8px 8px;
+                        background-color: azure;
+                    }
+
+                    .card-section {
+
+                        .description-link {
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 620px;
+                            }
+                        }
+
+                        .card-header {
+                            @media only screen and (min-width: 768px) and (max-width: 1279px) {
+                                width: 620px;
+                            }
+                        }
                     }
                 }
             }

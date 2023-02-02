@@ -95,15 +95,29 @@
     </header>
     <main class="main-service-entry-page">
         <div class="general-part-wrapper">
-            <img src="./images/first-grid-icon-service/Icon.svg" class="first-grid-icon-service"/>
+            <img src="./images/first-grid-icon-service/Icon.svg" class="first-grid-icon-service" />
             <h1 class="header-service-entry-page">IT and e-commerce</h1>
             <p class="main-paragraph">
                 An endless stream of contracts, tax issues, labor relations, corporate papers - legal work distracts you from doing business. But there is not much work to do to hire an in-house lawyer. <br /><br />
                 In addition, over time, the work will become the same type and uninteresting for a full-time lawyer. And we know very well how difficult it is to find a good candidate with experience in the field of information technology in Ukraine.
             </p>
-            <form class="form-submit-consultation">
-                <input type="submit" value="Free consultation" class="submit-consultation" />
-            </form>
+            <div class="form-submit-consultation">
+                <div class="popup" onclick="myFunction()">
+                    Free consultation
+                    <label class="popup-submenu" id="myPopup">
+                        <a class="close-button" href="service-entry-page.html"></a>
+                        <h1 class="forms-header">We would like to help you</h1>
+                        <form class="contact-form">
+                            <input type="text" name="Name" placeholder="Name" class="input-name" required />
+                            <input type="text" name="Message" placeholder="Message" class="input-message" />
+                            <h4 class="second-forms-header">How to answer you?</h4>
+                            <input type="text" name="number" placeholder="Phone number" class="input-number" required />
+                            <input type="text" name="Email" placeholder="Email" class="input-email" />
+                            <input type="submit" value="Send Message" class="submit-form" />
+                        </form>
+                    </label>
+                </div>
+            </div>
             <img src="./images/horizontal-line-separator/Separator.svg" class="main-horizontal-line-separator-img" />
             <h3 class="second-header-service-entry-page">Services in this area:</h3>
             <div class="grid-for-ul">
@@ -114,13 +128,88 @@
                     <li>registration of permit and other mandatory documentation required for carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);</li>
                 </ul>
                 <ul class="second-ul">
-                    <li>support of investment projects for the development of port infrastructure;</li>
-                    <li>certification of GTS, entering information about them in mandatory databases and registers;</li>
-                    <li>registration of permits for the construction of port terminals;</li>
-                    <li>registration of permit and other mandatory documentation required for carrying out activities in the port (emission permit, conclusion on EIA, RTC, etc.);</li>
+                    <li>support of procedures related to the lease of state property in the port;</li>
+                    <li>support of procedures related to confirmation of the status of port operator, maritime agent, foreign sailing line;</li>
+                    <li>support of procedures related to the inclusion of the company within the port;</li>
+                    <li>appeals against actions related to the illegal imposition of services in the port by monopoly companies.</li>
                 </ul>
             </div>
         </div>
+        <img src="./images/fatty-horizontal-separator/Bg.svg" class="fatty-horizontal-separator" />
+        <div class="additional-part-wrapper">
+            <h1 class="first-header-in-second-part">Recommended</h1>
+            <h4 class="second-header-in-second-part">Publications</h4>
+
+            <div class="grid-wrapper">
+                <div class="card-wrapper">
+                    <img src="./images/first-image-publication-card/Publication-1.svg">
+                    <div class="card-section">
+                        <h4 class="card-header">Equity associate</h4>
+                        <p class="date-title">April 22</p>
+                        <img src="./images/horizontal-line-separator/Separator.svg" class="horizontal-line-separator-image" />
+                        <a href="./publications-page.html" class="description-link">I'm a jun on projects. I am a co-owner of a law firm. How it happened. Before entering my parents told me that if I…</a>
+                    </div>
+                </div>
+                <div class="card-wrapper">
+                    <img src="./images/fourth-image-publication-card/Publication-4.svg">
+                    <div class="card-section">
+                        <h4 class="card-header">Language Law: How to Make Your Website Relevant</h4>
+                        <p class="date-title">August 19</p>
+                        <img src="./images/horizontal-line-separator/Separator.svg" class="horizontal-line-separator-image" />
+                        <a href="./publications-page.html" class="description-link">Natalia Kyryk, head of content studio Wordfactory.ua First, it's beautiful! This is the number one argument in favor of the Ukrainian-language site. Secondly, it is effective. IN…</a>
+                    </div>
+                </div>
+                <div class="card-wrapper card-wrapper-modified">
+                    <img src="./images/fifth-image-publication-card/Publication-5.svg">
+                    <div class="card-section">
+                        <h4 class="card-header">Reimbursement of the child's tuition fees in kindergarten and school</h4>
+                        <p class="date-title">February 5, 2018</p>
+                        <img src="./images/horizontal-line-separator/Separator.svg" class="horizontal-line-separator-image" />
+                        <a href="./publications-page.html" class="description-link">What we are talking about In June this year, the Verkhovna Rada amended the Tax Code of Ukraine. From now on, parents who receive an official…</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div class="footer show-for-medium">
+            <div class="horizontal-line-separator"><img src="./images/horizontal-line-separator/Separator.svg" /></div>
+            <div class="placement">
+                <div class="adres">
+                    <div class="main-text">Kyiv, Mechnikova str, 14/1</div>
+                    <img src="./images/dot-separator/dot-separator.svg" />
+                    <a href="#">ON MAP</a>
+                </div>
+                <div class="note">© 2021 HLEGAL Law company, LLC</div>
+                <div class="main-information">
+                    <div class="container">
+                        <div class="fb-logo"></div>
+                        <img src="./images/dot-separator/dot-separator.svg" />
+                        <div class="contact-information">0800 211 927</div>
+                        <img src="./images/dot-separator/dot-separator.svg" />
+                        <div class="email-information">contact@forstudy.space</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-footer hide-for-medium">
+            <div class="horizontal-line-separator"><img src="./images/horizontal-line-separator/Separator.svg" /></div>
+            <div class="placement">
+                <div class="main-text">Kyiv, Mechnikova str, 14/1</div>
+                <a href="#">ON MAP</a>
+                <div class="fb-logo"></div>
+                <div class="contact-information">0800 211 927</div>
+                <div class="email-information">contact@forstudy.space</div>
+                <div class="note">© 2021 HLEGAL Law company, LLC</div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 </body>
 </html>
